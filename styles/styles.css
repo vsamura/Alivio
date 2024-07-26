@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --font-family: "Lato", sans-serif;
+  --second-family: "Georgia", sans-serif;
+  --third-family: "Avenir", sans-serif;
+  --color-grin: #01996d;
+  --color-grin-bg: #245852;
+}
+
+/* Сброс стилей */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Начало стилизации */
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  color: #484848;
+}
+.nav{
+    padding: 30px 275px;
+}
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-ul {
+  display: flex;
+  column-gap: 72px;
+}
+.nav-li:first-child {
+  margin-left: -83px;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #292929;
+  text-decoration: none;
+}
+.btn-box{
+  padding-top: 1px;
+}
+.nav-btn{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.sign {
+  padding: 13px 30px;
+  width: 183px;
+  height: 51px;
+}
+.start {
+  background-color: var(--color-grin);
+  border-radius: 4px;
+  padding: 13px 50px;
+  width: 183px;
+  height: 51px;
+  color: #fff;
+}
+.nav_min{
+  display: none;
+  width: 51px;
+  height: 51px;
+  border-radius: 4px;
+  margin-top: -10px;
+  background-color: var(--color-grin);
+}
+.nav_min_line{
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+.nav_min_line:first-child{
+  margin-top: 12px;
+}
+
+
+@media screen and (max-width: 1720px){
+  .nav{
+    padding: 30px;
+}
+}
+@media screen and (max-width: 1350px){
+  .nav-li:first-child {
+    margin-left: 100px;
+  }
+  .nav-ul {
+    column-gap: 45px;
+  }
+}
+@media screen and (max-width: 1199px){
+  .nav-ul {
+    display: none;
+  }
+  .nav_min{
+    display: inline-block;
+  }
+  .nav-container{
+    display: grid;
+    grid-template-columns: 80px auto;
+  }
+}@media screen and (max-width: 530px){
+    .btn-box{
+      display: none;
+    }
+}
