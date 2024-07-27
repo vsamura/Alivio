@@ -218,7 +218,7 @@ body {
 }
 .box-item {
   max-width: 390px;
-  padding-top: 285px;
+  padding-top: 264px;
 }
 .box-item-header {
   font-family: var(--second-family);
@@ -256,6 +256,51 @@ body {
   padding-top: 55px;
 }
 
+/* video */
+.video {
+  background-color: #245852;
+}
+.video-container {
+  padding: 229px 206px 176px 207px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.video-content {
+  max-width: 580px;
+}
+.video-h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #fff;
+  padding-bottom: 33px;
+  padding-top: 83px;
+}
+.video-p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+  color: #fff;
+  padding-bottom: 76px;
+}
+.video-box {
+  background-image: url(../img/Video_bg.jpg);
+  background-size: auto;
+  background-position: center;
+  width: 895px;
+  height: 516px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-a-min{
+  display: none;
+}
+
+
 @media screen and (max-width: 1900px) {
   .works .container {
     padding-left: 30px;
@@ -271,7 +316,7 @@ body {
 }
 @media screen and (max-width: 1720px) {
   .nav,
-  .header .container {
+  .header .container{
     padding: 30px;
   }
   .works-top {
@@ -280,6 +325,9 @@ body {
   }
   .works-box {
     column-gap: 30px;
+  }
+  .video-container{
+    padding: 129px 30px 96px 30px;
   }
 }
 @media screen and (max-width: 1439px) {
@@ -312,6 +360,14 @@ body {
   .works-box {
     flex-direction: column;
   }
+  .video-container{
+    padding-top: 0px;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .video-box{
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 1199px) {
   .nav-ul {
@@ -332,6 +388,10 @@ body {
   .header-h1 {
     padding-top: 60px;
   }
+  .video-box{
+    width: 650px;
+    height: 380px;
+  }
 }
 @media screen and (max-width: 920px) {
   .box-item-p {
@@ -349,6 +409,10 @@ body {
   .header-h1 {
     padding-top: 30px;
   }
+  .video-box{
+    width: 400px;
+    height: 240px;
+  }
 }
 @media screen and (max-width: 530px) {
   .btn-box {
@@ -361,7 +425,21 @@ body {
   .header-btn {
     padding: 20px 20px;
   }
-  .h2{
+  .h2,
+  .video-h2{
     font-size: 30px;
   }
+  .video-p{
+  font-weight: 400;
+  font-size: 20px;
+
+  }
+  .video-box{
+    display: none;
+  }
+  .play-a-min{
+    display: block;
+    padding-bottom: 50px;
+  }
 }
+
