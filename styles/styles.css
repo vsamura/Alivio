@@ -299,6 +299,9 @@ body {
 .play-a-min{
   display: none;
 }
+.video .start:hover{
+  border: 1px solid #f5f8f7;
+}
 
 
 @media screen and (max-width: 1900px) {
