@@ -3,7 +3,7 @@
 
 ![screenshot](README/Alivio.jpg)
 
-[GitHub Pages Design and layout](https://vsamura.github.io/Alivio/)  
+[GitHub Pages Alivio](https://vsamura.github.io/Alivio/)  
 
 Реализована полная адаптивная версия под различные устройства.  
 
