@@ -385,7 +385,30 @@ body {
   margin: 0 auto;
   margin-top: -10px;
 }
-
+/* footer */
+.footer {
+  background-color:#245852;
+}
+.footer-container {
+  padding: 105px 275px;
+}
+.footer-logo {
+  padding-bottom: 75px;
+}
+.footer-nav {
+}
+.footer-li {
+  padding-bottom: 60px;
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-link:hover{
+  color: #8adbb9;
+}
 
 
 @media screen and (max-width: 1900px) {
@@ -411,7 +434,8 @@ body {
   .header .container{
     padding: 30px;
   }
-  .works-top {
+  .works-top,
+  .footer-container {
     padding-left: 30px;
     padding-right: 30px;
   }
