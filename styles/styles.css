@@ -302,10 +302,95 @@ body {
 .video .start:hover{
   border: 1px solid #f5f8f7;
 }
+/* product */
+.container-product {
+  padding: 120px 275px 242px;
+}
+.product-box {
+  display: flex;
+  justify-content: space-between;
+}
+.product-content {
+  max-width: 584px;
+}
+.product-h4 {
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+.product-h2 {
+  padding-bottom: 20px;
+}
+.product-p {
+  padding-bottom: 53px;
+  max-width: 530px;
+}
+.product-item{
+  position: relative;
+}
+.product-img {
+  margin-left: 60px;
+}
+.product-item-min {
+  max-width: 296px;
+  max-height: 293px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px 0 rgba(165, 165, 165, 0.25);
+  position: absolute;
+  top: 355px;
+  color: #000;  
+  text-align: center; 
+
+}
+.min-h1 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+.product-img-min {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  margin: 13px auto 10px;
+}
+.min-name {
+  font-size: 11px;
+  line-height: 157%;
+  padding-bottom: 20px;
+}
+.min-h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 157%;
+  padding-bottom: 15px;
+  padding-left: 61px;
+  padding-right: 61px;
+}
+.min-li {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 157%;
+  padding-bottom: 15px;
+}
+.min-li:last-child{
+  padding-bottom: 25px;
+}
+.line{
+  width: 110px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
 
 
 @media screen and (max-width: 1900px) {
-  .works .container {
+  .works .container,
+  .container-product {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -315,6 +400,10 @@ body {
   }
   .works-box {
     column-gap: 70px;
+  }
+  .product-box{
+    justify-content: center;
+    gap: 50px;
   }
 }
 @media screen and (max-width: 1720px) {
@@ -351,6 +440,14 @@ body {
   }
   .box-item:last-child .box-item-p {
     min-height: 100px;
+  }
+  .product-box{
+    flex-direction:column-reverse;
+    gap: 80px;
+    align-items: center;
+  }
+  .container-product{
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -415,6 +512,13 @@ body {
   .video-box{
     width: 400px;
     height: 240px;
+  }
+  .product-item-min {
+    display: none;
+  }
+  .product-img{
+    margin-left: 0;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 530px) {
